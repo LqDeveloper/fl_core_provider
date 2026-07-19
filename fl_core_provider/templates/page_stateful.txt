@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+import 'package:fl_core_provider/fl_core_provider.dart';
+
+{{importController}}
+
+class {{Name}}Page extends StatefulWidget {
+  const {{Name}}Page({super.key});
+
+  @override
+  State<{{Name}}Page> createState() => _{{Name}}PageState();
+}
+
+class _{{Name}}PageState extends FlBasePageState<{{Name}}Page, {{Name}}Controller> {
+  @override
+  {{Name}}Controller createController(BuildContext context) {
+    return {{Name}}Controller();
+  }
+
+{{pageIndex}}
+
+{{keepAlive}}
+
+  @override
+  Widget buildWithController(BuildContext context, {{Name}}Controller controller) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('{{Title}}'),
+      ),
+      body: // TODO: 在此添加页面内容
+    );
+  }
+}

@@ -1,0 +1,19 @@
+# Development / scaffolding tools (not needed by consumers)
+.flutter-plugins*
+.idea/
+.packages
+.pub/
+.reasonix/
+build/
+bricks/
+coverage/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# Skill & code generation (dev-only)
+fl_core_provider/
+
+# Git
+.git/
+.gitignore

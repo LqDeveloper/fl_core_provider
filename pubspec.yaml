@@ -1,0 +1,38 @@
+name: fl_core_provider
+description: A provider-based Flutter state management framework with Controller base class, page/app lifecycle, type-safe event bus, and enum-granularity UI refresh.
+version: 0.1.3
+homepage: https://github.com/LqDeveloper/fl_core_provider
+repository: https://github.com/LqDeveloper/fl_core_provider
+issue_tracker: https://github.com/LqDeveloper/fl_core_provider/issues
+documentation: https://github.com/LqDeveloper/fl_core_provider#readme
+topics:
+  - flutter
+  - state-management
+  - provider
+  - lifecycle
+  - event-bus
+
+environment:
+  sdk: ^3.10.3
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  meta: ^1.17.0
+  provider: ^6.1.5+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  #dart pub run import_sorter:main
+  import_sorter: ^4.6.0
+
+flutter:
+
+import_sorter:
+  emojis: false # Optional, defaults to false
+  comments: false # Optional, defaults to true
+  ignored_files: # Optional, defaults to []
+    - \/lib\/fl_core_provider.dart

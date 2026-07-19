@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import 'package:fl_core_provider/fl_core_provider.dart';
+
+{{importController}}
+
+class {{Name}}Page extends FlBasePage<{{Name}}Controller> {
+  const {{Name}}Page({super.key});
+
+  @override
+  {{Name}}Controller createController(BuildContext context) {
+    return {{Name}}Controller();
+  }
+
+  @override
+  Widget buildWithController(BuildContext context, {{Name}}Controller controller) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('{{Title}}'),
+      ),
+      body: // TODO: 在此添加页面内容
+    );
+  }
+}

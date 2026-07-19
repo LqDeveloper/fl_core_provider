@@ -1,0 +1,19 @@
+# Reasonix 配置
+# 
+# dart / flutter 命令因 FVM 托管的 SDK 上存在 macOS com.apple.provenance
+# 扩展属性，导致 update_engine_version.sh 写入 bin/cache/ 时失败。
+#
+# 解决方案说明：
+# 1. 直接使用 Dart SDK 原生二进制（绕过 FVM shell wrapper）：
+#    /Users/code/fvm/versions/3.44.6/bin/cache/dart-sdk/bin/dart
+# 2. 项目中提供了 .reasonix/scripts/dart_analyze.sh 便捷脚本，
+#    执行 bash .reasonix/scripts/dart_analyze.sh lib/ 即可运行分析。
+env:
+  DART_SDK: /Users/code/fvm/versions/3.44.6/bin/cache/dart-sdk
+  PATH:
+    - /Users/code/fvm/versions/3.44.6/bin/cache/dart-sdk/bin
+    - /opt/homebrew/bin
+    - /opt/homebrew/sbin
+    - /usr/local/bin
+    - /usr/bin
+    - /bin
