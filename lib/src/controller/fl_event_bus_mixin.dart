@@ -1,8 +1,8 @@
 import 'dart:async';
 
+import 'package:fl_state_lifecycle/fl_state_lifecycle.dart';
 import 'package:flutter/material.dart';
 
-import '../event_bus/fl_global_event_bus.dart';
 
 mixin FlEventBusMixin on ChangeNotifier {
   final List<StreamSubscription> _subscriptions = [];

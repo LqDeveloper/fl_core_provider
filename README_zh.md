@@ -164,7 +164,7 @@ observeEvent<UserLoggedIn>((event) {
 
 **自动清理：** Controller dispose 时会自动取消所有事件订阅，无需手动处理。
 
-### 7. PageView / IndexedStack 支持
+### 7. PageView / Tab 支持
 
 override `pageIndex` 来启用 Tab 场景的生命周期：
 
@@ -177,18 +177,6 @@ class TabPage extends FlBasePage<MyController> {
 
   // ... 其余实现
 }
-```
-
-使用 `FlIndexedStack` 替代标准 `IndexedStack`：
-
-```dart
-FlIndexedStack(
-  index: _currentIndex,
-  children: [
-    TabPage(),   // override pageIndex → 0
-    TabPage2(),  // override pageIndex → 1
-  ],
-)
 ```
 
 ### 8. 使用 `child` 参数优化性能

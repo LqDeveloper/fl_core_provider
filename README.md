@@ -162,7 +162,7 @@ observeEvent<UserLoggedIn>((event) {
 });
 ```
 
-### 7. PageView / IndexedStack support
+### 7. PageView / Tab support
 
 Override `pageIndex` to enable lifecycle in tab scenarios:
 
@@ -175,18 +175,6 @@ class TabPage extends FlBasePage<MyController> {
 
   // ... rest of implementation
 }
-```
-
-Use `FlIndexedStack` instead of the standard `IndexedStack`:
-
-```dart
-FlIndexedStack(
-  index: _currentIndex,
-  children: [
-    TabPage(),  // override pageIndex → 0
-    TabPage2(), // override pageIndex → 1
-  ],
-)
 ```
 
 ### 8. Optimize with `child` parameter

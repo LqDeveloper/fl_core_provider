@@ -37,12 +37,6 @@ class HomePage extends StatelessWidget {
             subtitle: '滑动翻页 + BottomNavigation，页面缓存与恢复',
             onTap: () => _push(context, '/bottomNav'),
           ),
-          _NavCard(
-            icon: Icons.layers_outlined,
-            title: 'IndexedStack',
-            subtitle: 'FlIndexedStack 保持页面状态',
-            onTap: () => _push(context, '/indexStack'),
-          ),
           const SizedBox(height: 20),
           _SectionHeader(
             icon: Icons.navigation_outlined,

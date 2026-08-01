@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
 import '../controller/fl_lifecycle_mixin.dart';
-import '../lifecycle/fl_lifecycle_state.dart';
-import '../mixin/fl_state_lifecycle_mixin.dart';
+import 'package:fl_state_lifecycle/fl_state_lifecycle.dart';
 
 /// 桥接 [FlStateLifecycleMixin] 与 [FlLifecycleMixin] 的生命周期观察组件
 ///

@@ -1,7 +1,6 @@
 import 'package:example/page_view/bottom_nav_page.dart';
 import 'package:example/page_view/tab_page.dart';
 import 'package:example/pages/dialog_page.dart';
-import 'package:example/pages/index_stack_page.dart';
 import 'package:example/pages/pop_page.dart';
 import 'package:example/pages/pop_until_page.dart';
 import 'package:example/pages/replace_page.dart';
@@ -38,7 +37,6 @@ class MyApp extends FlBasePage<RootController> {
         "/replace": (_) => const ReplacePage(),
         "/dialog": (_) => const DialogPage(),
         "/updatePage": (_) => const UpdatePage(),
-        "/indexStack": (_) => const IndexStackPage(),
       },
       home: const HomePage(),
       navigatorObservers: [FlRouteObserver()],

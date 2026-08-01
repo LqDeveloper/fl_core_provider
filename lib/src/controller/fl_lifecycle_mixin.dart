@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:meta/meta.dart';
 
-import '../lifecycle/fl_lifecycle_manager.dart';
-import '../lifecycle/fl_lifecycle_state.dart';
+import 'package:fl_state_lifecycle/fl_state_lifecycle.dart';
 
 /// 页面 + App 生命周期管理 mixin
 ///
