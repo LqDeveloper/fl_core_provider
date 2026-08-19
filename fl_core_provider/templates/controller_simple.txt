@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+import 'package:fl_core_provider/fl_core_provider.dart';
+
+/// 如果没有自定义事件需求，使用空枚举作为泛型参数即可。
+enum {{Name}}SimpleEvent {}
+
+class {{Name}}Controller extends FlBaseController<{{Name}}SimpleEvent> {
+  /// 空列表 = 永远不触发 UI 刷新。
+  /// 如需局部刷新，添加枚举值到列表中并使用 notifySingleListener。
+  @override
+  List<{{Name}}SimpleEvent> get shouldNotifyIds => [];
+
+  // --- State Fields ---
+  // {{name}}_count
+
+  // --- Computed Getters ---
+
+  // --- Lifecycle ---
+  @override
+  void onPageInit() {
+    super.onPageInit();
+    // 初始化数据、监听事件等
+  }
+
+  @override
+  void onPageStart() {
+    super.onPageStart();
+  }
+
+  // --- Business Methods ---
+  // 在这里添加业务方法
+}

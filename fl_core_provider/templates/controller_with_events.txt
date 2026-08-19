@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import 'package:fl_core_provider/fl_core_provider.dart';
+
+enum {{Name}}Event { {{eventList}} }
+
+class {{Name}}Controller extends FlBaseController<{{Name}}Event> {
+  @override
+  List<{{Name}}Event> get shouldNotifyIds => {{Name}}Event.values;
+
+  // --- State Fields ---
+  // {{name}}_count
+
+  // --- Computed Getters ---
+
+  // --- Lifecycle ---
+  @override
+  void onPageInit() {
+    super.onPageInit();
+    // 初始化数据、监听事件等
+  }
+
+  @override
+  void onPageStart() {
+    super.onPageStart();
+  }
+
+  // --- Business Methods ---
+  // 在这里添加业务方法，通过 notifySingleListener / notifyMultiListeners 通知 UI 更新
+}

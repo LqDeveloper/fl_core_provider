@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+import 'package:fl_core_provider/fl_core_provider.dart';
+
+/// {{Name}} — 使用 FlSelectorView 选择性刷新组件
+///
+/// 监听 [{{eventEnum}}.{{eventId}}] 事件，自动在事件触发时重建 UI。
+/// 用 [ChangeNotifierProvider<{{controllerType}}>] 提供给 widget tree。
+class {{Name}}Section extends FlSelectorView<{{eventEnum}}, {{controllerType}}> {
+  const {{Name}}Section({super.key});
+
+  @override
+  List<{{eventEnum}}> get observeIds => [{{eventEnum}}.{{eventId}}];
+
+  @override
+  Widget buildWidget(BuildContext context, {{controllerType}} controller) {
+    // TODO: 在此构建需要选择性刷新的 UI 片段
+    return Container();
+  }
+}
